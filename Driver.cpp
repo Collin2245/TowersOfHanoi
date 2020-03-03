@@ -14,7 +14,7 @@ int main()
     int ringAmount;
     std::cin >> ringAmount;
 
-    while(ringAmount>7)
+    while(ringAmount>7 && ringAmount <= 0)
     {
         std::cout << "Please enter how many disks you would like play with (less than 8): " << "\n";
         std::cin >> ringAmount;
@@ -36,17 +36,17 @@ int main()
         std::cout << "Enter the stack that you want to remove the top (1-3): " << "\n";
         int numRemoved;
         std::cin >> numRemoved;
-        while(numRemoved>3 || numRemoved<0)
+        while(numRemoved>3 || numRemoved<=0)
         {
-            std::cout << "Please enter 1-3: " << "\n";
+            std::cout << "Please enter 1-3: (enter letters to kill)" << "\n";
             std::cin >> numRemoved;
         }
         std::cout << "Enter the stack that you want to add the removed top (1-3): " << "\n"<<"\n";
         int numToAdd;
         std::cin >> numToAdd;
-        while(numToAdd>3 || numToAdd<0)
+        while(numToAdd>3 || numToAdd<=0)
         {
-            std::cout << "Please enter 1-3: " << "\n";
+            std::cout << "Please enter 1-3: (enter letters to kill)" << "\n";
             std::cin >> numToAdd;
         }
 
